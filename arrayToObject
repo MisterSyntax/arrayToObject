@@ -1,0 +1,15 @@
+var array = ['a','b','c','d',4,'asdf','a']
+
+
+var obj = array.reduce(
+  function(result, current){
+    if(result[current] === undefined){
+      result[current] = 1;
+    }
+    else{
+      result[current] += 1;
+    }
+    
+    return result;
+  }
+,{});
